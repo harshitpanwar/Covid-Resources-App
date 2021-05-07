@@ -46,7 +46,8 @@
             android:layout_rowWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:id="@+id/corona"
+
+            android:id="@+id/covid"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp">
 
@@ -74,8 +75,8 @@
                 <ImageView
                     android:src="@drawable/covid"
                     android:layout_gravity="center_horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
 
 
 

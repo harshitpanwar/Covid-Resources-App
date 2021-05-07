@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CovidCases">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:id="@+id/ttl"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="#498ec5"
+        android:fontFamily="@font/almendra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/total_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textColor="#498ec5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ttl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/almendra"
+        android:text="Active:"
+        android:textColor="#555a60"
+        android:textSize="20dp"
+
+        app:layout_constraintRight_toLeftOf="@+id/active"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:textColor="#555a60"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recovered:"
+        android:id="@+id/rcvr"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="36dp"
+        android:textColor="#67c392"
+        android:fontFamily="@font/almendra"
+        app:layout_constraintTop_toBottomOf="@+id/total_cases"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/recover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#67c392"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/rcvr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/almendra"
+        android:text="Deaths:"
+        android:textSize="20sp"
+        android:textColor="#da5d5f"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/deaths"
+        app:layout_constraintTop_toBottomOf="@+id/active"
+        tools:layout_editor_absoluteX="240dp" />
+
+    <TextView
+        android:id="@+id/deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="40dp"
+        android:text=""
+        android:textColor="#da5d5f"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

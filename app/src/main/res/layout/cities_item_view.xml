@@ -11,7 +11,9 @@
         android:layout_height="wrap_content"
         android:text="State Name"
         android:textSize="15sp"
+        android:fontFamily="@font/almendra"
         android:id="@+id/state_name"
+        android:textColor="#000"
         android:layout_marginLeft="5dp"
         android:layout_gravity="center"/>
 

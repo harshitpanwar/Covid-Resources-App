@@ -6,17 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".CovidCases">
 
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="156dp"
+        android:fontFamily="@font/almendra"
+        android:text="Covid Cases in"
+        android:textColor="#2C5F2D"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/heading"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/india"
+
+
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total:"
         android:id="@+id/ttl"
         android:textSize="20sp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="22dp"
         android:layout_marginLeft="36dp"
         android:textColor="#498ec5"
         android:fontFamily="@font/almendra"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading"
         app:layout_constraintLeft_toLeftOf="parent"
 
 
@@ -28,18 +57,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="22dp"
         android:text=""
         android:textColor="#498ec5"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/ttl"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/heading" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="22dp"
         android:layout_marginRight="10dp"
         android:fontFamily="@font/almendra"
         android:text="Active:"
@@ -47,20 +76,20 @@
         android:textSize="20dp"
 
         app:layout_constraintRight_toLeftOf="@+id/active"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/heading" />
 
     <TextView
         android:id="@+id/active"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="40dp"
-        android:text=""
+        android:text="      "
         android:textColor="#555a60"
 
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/heading" />
 
 
     <TextView
@@ -113,11 +142,34 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginRight="40dp"
-        android:text=""
+        android:text="      "
         android:textColor="#da5d5f"
         android:textSize="18sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/active" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recover">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recylerView"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

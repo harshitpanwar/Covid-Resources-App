@@ -6,4 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".Activities.PostActivity">
 
+
+    <EditText
+        android:layout_width="375dp"
+        android:layout_height="176dp"
+        android:layout_margin="32dp"
+        android:padding="20dp"
+        android:hint="Type Your Message here....."
+        android:gravity="left"
+        android:background="#fff"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/message"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintEnd_toStartOf="@+id/link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="Choose"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/addImage"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="68dp"
+        android:src="@drawable/ic_baseline_image_24"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <ImageView
+        android:id="@+id/link"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_baseline_link_24"
+
+
+        app:layout_constraintRight_toLeftOf="@id/addImage"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/link"
+        app:layout_constraintVertical_bias="0.171" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

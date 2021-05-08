@@ -43,4 +43,11 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //ImagePicker
+    implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
+    implementation 'com.github.florent37:inline-activity-result-kotlin:1.0.4'
+
+
+
 }

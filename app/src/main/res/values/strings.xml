@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CovidResourcesKotlin</string>
+
+    <string-array name="cities">
+        <item>Delhi</item>
+        <item>Bangalore</item>
+        <item>Kolkata</item>
+        <item>Mumbai</item>
+
+
+    </string-array>
+
+
 </resources>

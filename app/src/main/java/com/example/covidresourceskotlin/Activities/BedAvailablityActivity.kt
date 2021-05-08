@@ -1,5 +1,6 @@
 package com.example.covidresourceskotlin.Activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,7 +14,12 @@ class BedAvailablityActivity : AppCompatActivity() {
 
         addResource.setOnClickListener(View.OnClickListener {
 
+            val intent = Intent(this,PostActivity::class.java)
+            startActivity(intent)
+
         })
+
+
 
 
     }

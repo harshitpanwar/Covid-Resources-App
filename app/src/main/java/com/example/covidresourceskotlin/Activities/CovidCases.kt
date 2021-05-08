@@ -1,21 +1,16 @@
-package com.example.covidresourceskotlin
+package com.example.covidresourceskotlin.Activities
 
 import State_Adapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.adapter.StatefulAdapter
 import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.covidresourceskotlin.Models.StateModelData
+import com.example.covidresourceskotlin.R
 import kotlinx.android.synthetic.main.activity_covid_cases.*
-import kotlinx.android.synthetic.main.activity_splash_screen.*
-import org.json.JSONArray
 import org.json.JSONException
 
 class CovidCases : AppCompatActivity() {

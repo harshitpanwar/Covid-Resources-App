@@ -1,11 +1,10 @@
-package com.example.covidresourceskotlin
+package com.example.covidresourceskotlin.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
-import android.view.WindowManager
+import com.example.covidresourceskotlin.R
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
